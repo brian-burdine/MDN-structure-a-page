@@ -1,0 +1,86 @@
+
+/* 
+    Color stuff
+*/
+
+/*Background color of the page is a light grey*/
+html {
+    background-color: #a9a9a9
+}
+/*Background color of the topmost elements will be tinged red?*/
+body > * {
+    background-color: red;
+}
+/*Background color of sections will be green, with reduced opacity*/
+header, nav, main, section, footer {
+    background-color: rgba(0, 255, 0, .50);
+}
+/*Font color is...a dark grey/back, apparently*/
+h1, h2, li, p {
+    color: #2a2a2a;
+}
+
+/*
+    Sizing things
+*/
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3rem;
+}
+p, li {
+    font-size: 1.5rem;
+}
+header img {
+    height: 60px;
+}
+
+
+/*
+    Let's organize the header
+*/
+header {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 10px;
+    border: 2px solid black;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+header img {
+    display: block;
+    padding: 20px;
+}
+
+nav {
+    height: 50px;
+    flex: 100%;
+    display: flex;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline;
+    text-align: center;
+    flex: 1;
+}
+
+/*
+    Let's get the main text/sidebar sorted out
+*/
+
+main {
+    display: flex;
+    border-width: 4px;
+    border-style: dashed;
+    border-color: hotpink;
+    border-radius: 4px;
+}
+
+footer {
+    border: 2px solid black;
+}
